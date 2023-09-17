@@ -1,0 +1,18 @@
+.active {
+    position: relative;
+    & a {
+        color: #111;
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        display: inline-block;
+        background-color: orange;
+        width: 20px;
+        height: 3px;
+        bottom: 2px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 999px;
+    }
+}

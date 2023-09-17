@@ -1,0 +1,12 @@
+.trendingItem {
+    width: calc((100% - 30px * 2) / 3);
+    flex-shrink: 0;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 12px;
+    // transform: translateX(calc(($value - 1) * (-100% - 30px)));
+    transition: transform 0.5s linear;
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}

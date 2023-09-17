@@ -1,13 +1,54 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+@layer base {
+    body {
+        @apply font-Inter box-border;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        @apply font-Poppins;
+    }
+    h1 {
+        @apply text-[3rem] md:text-[3.5rem] text-tim font-black  leading-[50px];
+    }
+    h2 {
+        @apply text-[2rem] md:text-[3rem] text-tim font-bold  leading-[50px];
+    }
+    img {
+        @apply object-cover;
+    }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer components {
+    .desc {
+        @apply font-Inter text-desc font-medium;
+    }
+    .btn-transition {
+        @apply hover:scale-[1.1] transition duration-150 ease-out;
+    }
+    .btn-transition-background {
+        @apply transition duration-500 ease-out;
+    }
+    .center {
+        @apply flex justify-center items-center;
+    }
+    .bestTourItem {
+        @apply md:text-[16px] text-desc font-medium leading-[20px];
+    }
+
+    .trending__icon-action {
+        @apply rounded-[50%] w-[45px] h-[45px] md:w-[55px] md:h-[55px]  flex justify-center items-center text-[#999];
+        @apply hover:bg-[#FF7B29] hover:text-white hover:border-[#999];
+        @apply border-[1px] border-solid border-[#ECECEC]  cursor-pointer;
+        @apply transition-colors duration-500 ease-in;
+    }
+    .trending__back {
+        @apply rotate-[180deg];
+    }
 }

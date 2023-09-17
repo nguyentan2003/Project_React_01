@@ -1,0 +1,16 @@
+.decor {
+    display: block;
+    width: 120px;
+    border: 2px dashed #ff7b29;
+    border-radius: 999px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+img {
+    border-radius: 12px;
+}
+@media (max-width: 768px) {
+    .decor {
+        margin-top: 15px;
+    }
+}
