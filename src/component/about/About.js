@@ -12,7 +12,7 @@ function About() {
                 desc="Find Out More Information"
                 bg="bg-[#f1f1f1]"
             />
-            <main className="md:max-w-[1170px] md:mx-auto px-[20px]">
+            <main className="set-width">
                 <div className="mt-[60px] md:mt-[140px] operater">
                     <OperaterAbout />
                 </div>

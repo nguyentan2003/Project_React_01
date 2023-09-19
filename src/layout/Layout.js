@@ -8,7 +8,7 @@ import Footer from "../component/common/footer/Footer";
 function Layout() {
     return (
         <div className=" ">
-            <header className="  z-40 pb-3 pt-4  fixed top-[-4px] right-0 left-0  ">
+            <header className="  z-40 pb-3 pt-4  fixed top-[-4px] right-0 left-0 bg-[#f1f1f1] ">
                 <div className="flex justify-between items-center md:max-w-[1170px] md:mx-auto px-[20px] ">
                     <Logo />
                     <Link to="/">

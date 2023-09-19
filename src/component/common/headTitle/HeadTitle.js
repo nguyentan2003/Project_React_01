@@ -2,7 +2,11 @@ import React from "react";
 
 function HeadTitle(props) {
     return (
-        <div className={`${props.bg} h-[100vh] center flex-col `}>
+        <div
+            className={`${props.bg} ${
+                props.height ? props.height : "h-[100vh]"
+            }  center flex-col `}
+        >
             <h1
                 className="md:text-[130px] text-[80px] leading-[140px] text-[#FF7B29] mb-[20px]"
                 data-aos="flip-left"

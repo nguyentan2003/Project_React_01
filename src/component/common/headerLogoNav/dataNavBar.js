@@ -55,5 +55,3 @@ export const navbarBottom = [
         active: false,
     },
 ];
-
-console.log(navbar);

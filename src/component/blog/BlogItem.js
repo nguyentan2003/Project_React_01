@@ -59,7 +59,7 @@ function BlogItem() {
     return (
         <div className="grid grid-cols-1 md:grid-cols-3 md:gap-[30px] gap-[20px] ">
             {dataBlogItem.map((item) => (
-                <div>
+                <div key={item.id}>
                     <div className="w-full mb-[20px]">
                         <img
                             src={item.img}

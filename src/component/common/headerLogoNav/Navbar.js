@@ -11,7 +11,6 @@ function Navbar(props) {
             bien = item.id;
         }
     });
-    console.log(bien);
     const [active, setActive] = useState(bien);
     const handleActive = (id) => {
         navbar[active].active = false;

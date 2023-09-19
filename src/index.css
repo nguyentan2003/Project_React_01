@@ -51,4 +51,7 @@
     .trending__back {
         @apply rotate-[180deg];
     }
+    .set-width {
+        @apply md:max-w-[1170px] md:mx-auto px-[20px];
+    }
 }

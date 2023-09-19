@@ -20,11 +20,9 @@ const data = [
     },
 ];
 function FooterBottom() {
-    console.log(navbar);
     return (
         <div className="flex justify-between">
             <Logo />
-            <Navbar data={navbar} />
             <div className="flex gap-3 justify-items-center">
                 {data.map((item) => (
                     <a

@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../../css/heroBottom.module.scss";
+// import style from "../../css/heroBottom.module.scss";
 import clsx from "clsx";
 const base = [
     {
@@ -21,12 +21,10 @@ const base = [
         icon: `fa-solid fa-check`,
     },
 ];
-function HeroBottom() {
+function SearchBar() {
     return (
         <div
-            className={`${clsx(
-                style.heroBottom
-            )} md:ml-[250px] md:w-[650px]  flex md:flex-row flex-col py-[20px] md:py-0 center`}
+            className={` md:w-[650px]  flex md:flex-row flex-col py-[20px] md:py-0 center`}
         >
             <ul className=" flex justify-start md:center md:flex-row flex-col">
                 {base.map((item) => (
@@ -61,4 +59,4 @@ function HeroBottom() {
     );
 }
 
-export default HeroBottom;
+export default SearchBar;

@@ -46,7 +46,10 @@ function GeneralBlog() {
                     </h3>
                     <div className="grid grid-cols-1 gap-[20px]">
                         {dataGeneralBlog.map((item) => (
-                            <div className="flex items-center gap-[20px]">
+                            <div
+                                key={item.id}
+                                className="flex items-center gap-[20px]"
+                            >
                                 <div className="flex-shrink-0">
                                     <img
                                         className="w-[100px] h-[100px] object-cover"
