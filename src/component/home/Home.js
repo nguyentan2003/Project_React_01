@@ -11,7 +11,7 @@ import Guidings from "./javascript/guidings/Guidings";
 import NewLetter from "../common/newLetter/NewLetter";
 function Home() {
     return (
-        <div className="mt-[70px] md:max-w-[1170px] md:mx-auto px-[20px]">
+        <div className="mt-[70px] set-width px-[20px]">
             <Hero />
             <BestTour />
             <ChooseUs />
